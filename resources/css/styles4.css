@@ -1,0 +1,160 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #0a1c29;
+}
+
+header,
+footer,
+aside, 
+nav,
+main,
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+header,
+footer {
+    flex: 0;
+    background: #286199;
+    color: #ffffff;
+    min-height: 10vh;
+}
+
+aside, 
+nav {
+    min-height: 5vh;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+article, 
+section, 
+main {
+    flex-flow: column;
+}
+
+footer {
+    background: #286199;
+}
+
+main {
+    flex: 1;
+    min-height: 70vh;
+    background-color: #cfe1f4;
+}
+
+aside {
+    background-color: #3f85c6;
+}
+
+nav {
+    background-color: #6a9feb;
+}
+
+article {
+    background-color: #d1e1f0;
+    min-width: 96vw;
+    min-height: 6vh;
+    margin: 1vh;
+}
+
+section {
+    background-color: #9ec5eb;
+    margin: 2vh;
+    min-height: 28vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-transform: uppercase;
+    padding-top: 1vh;
+}
+
+p {
+    margin: auto;
+    margin-top: 6px;
+}
+
+.article {
+    margin-top: 4vh;
+}
+
+.article2 {
+    margin-bottom: 0vh;
+}
+
+@media (min-width: 768px) {
+    .hg-content{
+        display: inline-flex;
+        flex-flow: wrap;
+    }
+
+    nav,
+    main, 
+    aside {
+        margin-bottom: 2vh;
+    }
+
+    nav {
+        align-self: flex-start;
+        min-width: 100vw;
+        min-height: 5vh;
+        overflow: auto;
+        margin-top: 2vh;
+    }
+
+    main {
+        min-height: 69vh;
+        min-width: 50vw;
+        order: 1;
+        border: solid 1px #ced9de;
+        border-radius: 4px;
+        background-color: #dee6e7;
+    }
+
+    aside,
+    nav {
+        color: black;
+    }
+
+    aside {
+        order: 2;
+        min-width: 20vw;
+        min-height: 69vh;
+        margin-left: 1vw;
+        background-color: #5985b0;
+    }
+
+    nav {
+        order: 0;
+        background-color: #73a1cf;
+    }
+
+    article {
+        min-width: 70vw;
+        min-height: 9vh;
+        background-color: #739fd0;
+    }
+
+    section{
+        border-radius: 2px;
+        border: solid 2px #9aadc1;
+        min-height: 20vh;
+        padding-bottom: 17px;
+        padding-top: 12px;
+        background-color: #b4c7dd;
+    }
+
+    .section > .article2,
+    p {
+        display: none;
+    }
+
+}

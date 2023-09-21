@@ -1,0 +1,112 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #0a1c29;
+}
+
+header,
+footer,
+aside, 
+nav,
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header,
+footer {
+    flex: 0;
+    background: #3498db;
+    color: #ffffff;
+    min-height: 10vh;
+}
+
+aside, 
+nav {
+    min-height: 15vh;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background: #184664;
+}
+
+main {
+    flex: 1;
+    min-height: 50vh;
+}
+
+aside {
+    background-color: #b7cad3;
+}
+
+nav {
+    background-color: #dcdddc;
+}
+
+
+@media (min-width: 640px) {
+    .hg-content{
+        display: inline-flex;
+        flex-flow: wrap;
+    }
+
+    nav {
+        min-width: 20vw;
+        overflow: auto;
+    }
+
+    main {
+        height: 65vh;
+        width: 50vw;
+        order: 1;
+    }
+
+    aside {
+        order: 2;
+        align-self: flex-end;
+        min-width: 100vw;
+        min-height: 15vh;
+    }
+
+    nav {
+        order: 0;
+    }
+
+}
+
+@media (min-width: 960px) {
+
+    .hg-content{
+        display: inline-flex;
+        flex-wrap: nowrap;
+    }
+
+    aside,
+    nav {
+        min-width: 15vw;
+        min-height: 80vh;
+        overflow: auto;
+    }
+
+    main {
+        min-height: 80vh;
+        min-width: 50vw;
+        order: 1;
+    }
+
+    aside {
+        order: 2;
+    }
+
+    nav {
+        order: 0;
+    }
+
+}

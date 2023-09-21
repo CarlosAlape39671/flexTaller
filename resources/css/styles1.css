@@ -1,0 +1,55 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #0a1c29;
+}
+
+header,
+footer {
+    flex: 0;
+    background: #3498db;
+    min-height: 10vh;
+}
+
+header {
+    text-align: center;
+}
+
+footer {
+    background: #184664;
+    color: #ffffff;
+    text-align: center;
+}
+
+header > nav {
+    height: 5vh;
+    background-color: #88b8d8;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+}
+
+main section {
+    background-color: #e2eaf0;
+    height: 37.5vh;
+    flex: 0 0 auto;
+    overflow: auto;
+    padding: 0 10px 0;
+}
+
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    main section {
+        width: 50vw;
+        height: 76vh;
+        overflow: auto;
+    }
+
+}
